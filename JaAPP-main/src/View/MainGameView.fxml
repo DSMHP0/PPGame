@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
@@ -18,12 +19,12 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GameController">
    <children>
-      <ImageView fitHeight="622.0" fitWidth="614.0" layoutX="-14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="614.0" fitWidth="606.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Resources/main.png" />
          </image>
       </ImageView>
-      <Region layoutX="8.0" layoutY="139.0" opacity="0.34" prefHeight="272.0" prefWidth="581.0" style="-fx-background-color: #50242f;" />
+      <Region layoutX="10.0" layoutY="139.0" opacity="0.34" prefHeight="238.0" prefWidth="581.0" style="-fx-background-color: #50242f;" />
       <ImageView fitHeight="62.0" fitWidth="55.0" layoutX="27.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Resources/Corazon.png" />
@@ -70,5 +71,14 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Pane fx:id="pnGamePanel" layoutX="30.0" layoutY="276.0" prefHeight="55.0" prefWidth="542.0">
+         <padding>
+            <Insets left="100.0" />
+         </padding></Pane>
+      <ImageView fx:id="optTematicaInGame" fitHeight="79.0" fitWidth="72.0" layoutX="500.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
    </children>
 </AnchorPane>

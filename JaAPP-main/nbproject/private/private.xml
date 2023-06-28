@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Nikolas%20Murillo/Desktop/JaAPP-main/JaAPP-main/src/Controller/PerfilUsuarioController.java</file>
-            <file>file:/C:/Users/Nikolas%20Murillo/Desktop/JaAPP-main/JaAPP-main/src/View/PerfilUsuarioView.fxml</file>
+            <file>file:/C:/Users/DAVID/Documents/GitHub/PPGame/JaAPP-main/src/Controller/TematicasController.java</file>
+            <file>file:/C:/Users/DAVID/Documents/GitHub/PPGame/JaAPP-main/src/Model/Palabra.java</file>
+            <file>file:/C:/Users/DAVID/Documents/GitHub/PPGame/JaAPP-main/src/Model/Tematica.java</file>
+            <file>file:/C:/Users/DAVID/Documents/GitHub/PPGame/JaAPP-main/src/Controller/GameController.java</file>
         </group>
     </open-files>
 </project-private>

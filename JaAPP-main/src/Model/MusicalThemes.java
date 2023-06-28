@@ -11,7 +11,7 @@ import javafx.scene.media.MediaPlayer;
 
 /**
  *
- * @author Nikolas Murillo
+ * @author Sebastian Murillo
  */
 public class MusicalThemes {
     

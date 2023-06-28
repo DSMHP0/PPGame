@@ -26,7 +26,7 @@
          </image>
       </ImageView>
       <Region layoutX="53.0" layoutY="151.0" opacity="0.34" prefHeight="249.0" prefWidth="502.0" style="-fx-background-color: #50242f;" />
-      <ImageView fx:id="optTematicaAnimal" fitHeight="102.0" fitWidth="154.0" layoutX="58.0" layoutY="242.0" onMouseClicked="#seleccionarTematica" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
+      <ImageView fx:id="optTematica_Animales" fitHeight="102.0" fitWidth="154.0" layoutX="58.0" layoutY="242.0" onMouseClicked="#seleccionarTematica" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
          <image>
             <Image url="@../Resources/Animales.png" />
          </image>
@@ -34,7 +34,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="88.0" fitWidth="81.0" layoutX="216.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
+      <ImageView fx:id="optTematica_Paises" fitHeight="88.0" fitWidth="81.0" layoutX="216.0" layoutY="242.0" onMouseClicked="#seleccionarTematica" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
          <image>
             <Image url="@../Resources/Paises.png" />
          </image>
@@ -42,7 +42,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="95.0" fitWidth="88.0" layoutX="333.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
+      <ImageView fx:id="optTematica_Peliculas" fitHeight="95.0" fitWidth="88.0" layoutX="333.0" layoutY="238.0" onMouseClicked="#seleccionarTematica" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
          <image>
             <Image url="@../Resources/Peliculas.png" />
          </image>
@@ -50,7 +50,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="102.0" fitWidth="154.0" layoutX="440.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
+      <ImageView fx:id="optTematica_Comidas" fitHeight="102.0" fitWidth="154.0" layoutX="440.0" layoutY="231.0" onMouseClicked="#seleccionarTematica" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
          <image>
             <Image url="@../Resources/Comida.png" />
          </image>
