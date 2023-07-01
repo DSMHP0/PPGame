@@ -63,9 +63,6 @@ public class Palabra extends Tematica{
             System.out.println("Tematica no Valida");
         }
         
-        System.out.println(palabraSecreta);
-        
-        
         return palabraSecreta;
     }
 

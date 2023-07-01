@@ -24,33 +24,8 @@
             <Image url="@../Resources/main.png" />
          </image>
       </ImageView>
-      <Region layoutX="10.0" layoutY="139.0" opacity="0.34" prefHeight="238.0" prefWidth="581.0" style="-fx-background-color: #50242f;" />
-      <ImageView fitHeight="62.0" fitWidth="55.0" layoutX="27.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Resources/Corazon.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="55.0" layoutX="82.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Resources/Corazon.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="55.0" layoutX="137.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Resources/Corazon.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="55.0" layoutX="186.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Resources/Corazon.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="55.0" layoutX="231.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Resources/Corazon.png" />
-         </image>
-      </ImageView>
-      <TextField alignment="CENTER" layoutX="245.0" layoutY="459.0" prefHeight="40.0" prefWidth="83.0" promptText="Letra" style="-fx-background-color: #FAE1AA; -fx-background-radius: 50;">
+      <Region layoutX="10.0" layoutY="162.0" opacity="0.34" prefHeight="178.0" prefWidth="581.0" style="-fx-background-color: #50242f;" />
+      <TextField fx:id="KeyGame" alignment="CENTER" layoutX="219.0" layoutY="424.0" prefHeight="40.0" prefWidth="134.0" promptText="LETRA" style="-fx-background-color: #FAE1AA; -fx-background-radius: 50;">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -58,12 +33,12 @@
             <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
-      <Text fill="WHITE" layoutX="208.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresar Letra" textAlignment="CENTER">
+      <Text fill="WHITE" layoutX="208.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresar Letra" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="btnCheckWord" layoutX="204.0" layoutY="512.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="164.0" style="-fx-background-color: #22242c; -fx-background-radius: 50;" text="Comprobar" textFill="#fcebb9">
+      <Button fx:id="btnCheckWord" layoutX="204.0" layoutY="513.0" mnemonicParsing="false" onAction="#comprobarLetraIngresada" prefHeight="40.0" prefWidth="164.0" style="-fx-background-color: #22242c; -fx-background-radius: 50;" text="COMPROBAR" textFill="#fcebb9">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -71,14 +46,20 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Pane fx:id="pnGamePanel" layoutX="30.0" layoutY="276.0" prefHeight="55.0" prefWidth="542.0">
+      <Pane fx:id="pnGamePanel" layoutX="29.0" layoutY="242.0" prefHeight="55.0" prefWidth="542.0">
          <padding>
             <Insets left="100.0" />
          </padding></Pane>
-      <ImageView fx:id="optTematicaInGame" fitHeight="79.0" fitWidth="72.0" layoutX="500.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
+      <ImageView fx:id="optTematicaInGame" fitHeight="75.0" fitWidth="77.0" layoutX="494.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
+      <Pane fx:id="pnGameVidas" layoutX="14.0" layoutY="14.0" prefHeight="55.0" prefWidth="318.0">
+         <padding>
+            <Insets left="100.0" />
+         </padding>
+      </Pane>
+      <Pane fx:id="pnIntentosRestantes" layoutX="21.0" layoutY="173.0" prefHeight="25.0" prefWidth="272.0" />
    </children>
 </AnchorPane>

@@ -21,6 +21,7 @@ public abstract class Tematica {
     
     /**
      * Getter 
+     * @return 
     */
     public String getNombreTematica() {
         return Tematica.nombreTematica;
@@ -28,6 +29,7 @@ public abstract class Tematica {
 
     /**
      * Setter 
+     * @param nombreTematica
     */
     public final void setNombreTematica(String nombreTematica) {
         Tematica.nombreTematica = nombreTematica;
