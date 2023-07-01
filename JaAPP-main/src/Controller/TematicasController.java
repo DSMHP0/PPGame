@@ -4,6 +4,7 @@
  */
 package Controller;
 
+import Model.Tematica;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -24,12 +25,14 @@ import javafx.stage.Stage;
  *
  * @author DAVID
  */
-public class TematicasController implements Initializable {
+public class TematicasController extends Tematica implements Initializable {
 
     @FXML
-    private ImageView optTematicaAnimal;
+    private ImageView optTematica_Animales;
     /**
      * Initializes the controller class.
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -53,9 +56,16 @@ public class TematicasController implements Initializable {
     }
     
     public void seleccionarTematica(MouseEvent me){
+        
+        ImageView tempImg = (ImageView) me.getTarget();
+        String[] valueTem = tempImg.getId().toLowerCase().split("_");
+        String Tematica = valueTem[1];
+
+        setNombreTematica(Tematica);
+            
         try{
            
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/GameView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/MainGameView.fxml"));
             Parent root = loader.load();
 
             GameController controlador = loader.getController();
@@ -69,7 +79,7 @@ public class TematicasController implements Initializable {
                 controlador.closeWindows();
             });
 
-            Stage myStage = (Stage) this.optTematicaAnimal.getScene().getWindow();
+            Stage myStage = (Stage) this.optTematica_Animales.getScene().getWindow();
             myStage.close();
          
         }catch(IOException e){

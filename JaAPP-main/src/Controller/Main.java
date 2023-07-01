@@ -25,7 +25,6 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {
         try{
             
-            
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("/View/InicioView.fxml"));
             Pane ventana = (Pane) loader.load();

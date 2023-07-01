@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GameController">
+   <children>
+      <ImageView fitHeight="614.0" fitWidth="606.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/main.png" />
+         </image>
+      </ImageView>
+      <Region layoutX="10.0" layoutY="162.0" opacity="0.34" prefHeight="178.0" prefWidth="581.0" style="-fx-background-color: #50242f;" />
+      <TextField fx:id="KeyGame" alignment="CENTER" layoutX="219.0" layoutY="424.0" prefHeight="40.0" prefWidth="134.0" promptText="LETRA" style="-fx-background-color: #FAE1AA; -fx-background-radius: 50;">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text fill="WHITE" layoutX="208.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresar Letra" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnCheckWord" layoutX="204.0" layoutY="513.0" mnemonicParsing="false" onAction="#comprobarLetraIngresada" prefHeight="40.0" prefWidth="164.0" style="-fx-background-color: #22242c; -fx-background-radius: 50;" text="COMPROBAR" textFill="#fcebb9">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane fx:id="pnGamePanel" layoutX="29.0" layoutY="242.0" prefHeight="55.0" prefWidth="542.0">
+         <padding>
+            <Insets left="100.0" />
+         </padding></Pane>
+      <ImageView fx:id="optTematicaInGame" fitHeight="75.0" fitWidth="77.0" layoutX="494.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" styleClass="optionTematica">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Pane fx:id="pnGameVidas" layoutX="14.0" layoutY="14.0" prefHeight="55.0" prefWidth="318.0">
+         <padding>
+            <Insets left="100.0" />
+         </padding>
+      </Pane>
+      <Pane fx:id="pnIntentosRestantes" layoutX="21.0" layoutY="173.0" prefHeight="25.0" prefWidth="272.0" />
+   </children>
+</AnchorPane>
